@@ -1,0 +1,27 @@
+h1{
+  
+}
+header{
+  text-align: center;
+  font-size: 2rem;
+}
+
+*{
+  background-color: rgb(248, 248, 152);
+}
+
+.rectangle {
+  display: inline-flex;
+  width: 200px;
+  height: 200px;
+ background: rgb(149, 236, 166);
+  padding: 3rem;
+  margin: 3rem;
+
+
+}
+
+section{
+  text-align: center;
+  font-size: 2rem;
+}
