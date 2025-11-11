@@ -1,15 +1,12 @@
+import news from '../assets/nc-news.jpeg'
+function Header() {
+  const title = "Northcoders News";
 
-function Header(){
-
-    const title = 'Northcoders News'
-
-
-
-return (
+  return (
     <header>
-        <h1>{title}</h1>
-        <img src='./src/nc-news.jpeg'/>
+      <h1>{title}</h1>
+      <img src={news} />
     </header>
-)
+  );
 }
-export default Header
+export default Header;
