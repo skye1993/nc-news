@@ -1,16 +1,15 @@
-import { useState } from "react";
 import "./App.css";
-import Header from "./Components/Header";
-import Filter from "./Components/Filter";
-import DataGrid from "./Components/Data Grid";
-
+import { Routes, Route } from "react-router-dom";
+import AllArticles from "./Components/Articles";
+import SingleArticles from "./Components/SingleArticles"
 
 function App() {
   return (
     <>
-      <Header />
-      <Filter />
-      <DataGrid />
+      <Routes>
+        <Route exact path="/" element={<AllArticles />} />
+        <Route path="/article/:article_id" element={<SingleArticles />} />
+      </Routes>
     </>
   );
 }
