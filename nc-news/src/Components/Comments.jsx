@@ -28,8 +28,8 @@ function Comments({article_id}) {
     return <div>Loading Article comments...</div>;
   }
   if (isError) {
-    return <p>We are having techniel diffucultes, please bear with us.</p>;
-  }
+    return <p>We are having techniel diffucultes, please bear with us.</p>
+  };
 
   return (
       <ul>

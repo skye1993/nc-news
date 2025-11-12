@@ -32,8 +32,8 @@ function SingleArticles() {
     return <div>Loading Article...</div>;
   }
   if (isError) {
-    return <p>We are having techniel diffucultes, please bear with us.</p>;
-  }
+    return <p>We are having techniel diffucultes, please bear with us.</p>
+  };
 
   return (
     <>
