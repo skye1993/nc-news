@@ -29,8 +29,8 @@ function SingleArticles() {
   }, [article_id]);
 
   if (loading) {
-    return <div>Loading Article...</div>;
-  }
+    return <div>Loading Article...</div>
+  };
   if (isError) {
     return <p>We are having techniel diffucultes, please bear with us.</p>
   };
