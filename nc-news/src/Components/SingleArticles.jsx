@@ -3,8 +3,10 @@ import imgAuthor from "../assets/author.jpeg";
 import Comments from "./Comments";
 import Likes from "./Likes";
 import { useParams } from "react-router-dom";
+import NewComments from './NewComments'
 
-function SingleArticles() {
+
+function SingleArticles({ userValue, setArticleComments }) {
   const [topic, setTopic] = useState("");
   const [author, setAuthor] = useState("");
   const [body, setBody] = useState("");
@@ -52,6 +54,7 @@ function SingleArticles() {
         </div>
       </div>
       <Comments article_id={article_id} />
+      <NewComments article_id={article_id} userValue={userValue} setArticleComments={setArticleComments}/>
     </>
   );
 }
