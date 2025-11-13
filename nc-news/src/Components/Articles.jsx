@@ -2,6 +2,8 @@ import { useState } from "react";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Header from "./Header";
+import Topics from "./Topics";
+
 
 function AllArticles() {
   const [articles, setArticles] = useState([]);
@@ -33,16 +35,22 @@ function AllArticles() {
   return (
     <>
     <Header />
+    <Topics/>
       <ul>
         {articles.map((article) => {
           console.log(article);
           return (
+           
             <Link to={`/article/${article.article_id}`}> <div className="rectangle">Article:
-            <br/>
-              <li key={article.title}>{article.title}</li>
-             <br/>
-              <p key={article.author}>Author:{article.author}</p></div>
+           
+              <li className="text">{article.title}</li>
+            
+              <li className="text">Author: {article.author}</li>
+            
+            <li className="text">Comments: {article.comment_count}</li></div>
             </Link>
+          
+    //      
           );
         })}
       </ul>
